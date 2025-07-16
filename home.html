@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Student News Channel</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #d9f2ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff0000;
+            padding: 10px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .main-news {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Student News Channel</h1>
+
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <div>
+            <div class="video">
+                <video width="100%" controls>
+                    <source src="newsclip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="main-news">
+                <h2>Today's News</h2>
+                <p>Heavy rain expected this week. Students are advised to carry umbrellas.</p>
+                <p>New school library to open next month with more books.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Other News</h3>
+            <a href="news1.html">News 1</a>
+            <a href="news2.html">News 2</a>
+            <a href="news3.html">News 3</a>
+        </div>
+    </div>
+
+</body>
+</html>
